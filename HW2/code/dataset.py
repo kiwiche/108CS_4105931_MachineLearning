@@ -28,3 +28,8 @@ class IMAGE_Dataset(Dataset):
             image = self.transform(image)
 
         return image, self.y[index]
+
+if __name__ == "__main__":
+    a = IMAGE_Dataset('train')
+    print(len(a))
+
